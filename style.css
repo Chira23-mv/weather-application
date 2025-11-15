@@ -1,0 +1,83 @@
+/* Full-screen background image */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('sky2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+}
+
+/* Transparent glowing weather box */
+.weather-app {
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  backdrop-filter: blur(12px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(117, 111, 226, 0.3); /* soft glow */
+  border: 1px solid rgba(153, 114, 226, 0.2);
+}
+
+/* Title with glow */
+.weather-app h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: black;
+  text-shadow: 0 0 10px #7c80c4;
+}
+
+/* Input and buttons */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  box-shadow: 0 0 10px #6c7ccd;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6c7ccd;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #6c7ccd;
+}
+
+button:hover {
+  background-color: #6c7ccd;
+  box-shadow: 0 0 25px #6c7ccd;
+}
+
+/* Weather info section */
+.weather-info img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: black;
+  text-shadow: 0 0 5px #6c7ccd;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-app">
+    <h1>🌦️ Smart Weather</h1>
+    <div class="controls">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+      <button onclick="startVoice()">🎙️ Speak</button>
+      <button onclick="getLocation()">📍 Use My Location</button>
+    </div>
+    <div class="weather-info" id="weather-info"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
